@@ -1,0 +1,234 @@
+body
+{
+    background-color: blueviolet;
+}
+
+
+@media screen and (min-width: 1200px){
+  .fg{
+    width: 470px;
+    height: 460px;
+  }
+  .code{
+    margin-left: 170px;
+    margin-bottom: 10px;
+  }
+  .cover{
+    margin-left: 66px;
+    margin-top: 10px;
+  }
+  h1{
+    width: 340px;
+    margin-left: 65px;
+  }
+  .rating, .wrap {
+    margin-left: 65px;
+  }
+  .btn{
+    padding: 7px;
+    border-radius: 40%;
+    border: none;
+    margin-left: 65px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .container{
+    width: 490px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px ) and (max-width: 1199px){
+  .fg{
+    width: 354px;
+    height: 374px;
+  }
+  .code{
+    margin-left: 110px;
+    margin-bottom: 10px;
+  }
+  .cover{
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  h1{
+    width: 254px;
+    margin-left: 50px;
+  }
+  .rating, .wrap{
+    margin-left: 50px;
+  }
+  .btn{
+    padding: 7px;
+    border-radius: 40%;
+    border: none;
+    margin-left: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .container{
+    width: 370px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px){
+  .fg{
+    width: 250px;
+    height: 260px;
+  }
+  .code{
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  .cover{
+    margin-left: 36px;
+    margin-top: 10px;
+}
+  h1{
+    width: 253px;
+    margin-left: 35px;
+  }
+  .rating, .wrap{
+    margin-left: 37px;
+  }
+  .btn{
+    padding: 7px;
+    border-radius: 40%;
+    border: none;
+    margin-left: 37px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .container{
+    width: 270px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.money
+{
+  margin-left: 5px;
+}
+.wrap{
+  display: flex;
+}
+.rate{
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.cont-form{
+  display: flex;
+}
+.cover{
+  display: flex;
+}
+.per{
+  padding: 4px;
+  background-color: green;
+  margin-right: 5px;
+}
+.xit{
+  padding: 4px;
+  background-color: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol
+{
+    margin: 0;
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+img
+{
+    display: block;
+    height: auto;
+}
+
+
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    font-size: 25px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: orange;
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px orange;
+  }
